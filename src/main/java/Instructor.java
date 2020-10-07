@@ -1,4 +1,4 @@
-public class Instructor extends Person implements ITeacher {
+public class Instructor  extends Person implements ITeacher  {
 
     public Instructor(long ID, String name) {
         super(ID, name);

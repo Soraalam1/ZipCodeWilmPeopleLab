@@ -1,5 +1,5 @@
-public interface ITeacher {
-    void teach(ILearner learner, double numberOfHours);
+public interface ITeacher <L extends ILearner> {
+    void teach(L learner, double numberOfHours);
 
-    void lecture(ILearner[] learners, double numberOfHours);
+    void lecture(L[] learners, double numberOfHours);
 }

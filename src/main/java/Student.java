@@ -12,4 +12,11 @@ public class Student extends Person implements ILearner {
     public Double getTotalStudyTime() {
         return totalStudyTime;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "totalStudyTime=" + totalStudyTime +
+                '}';
+    }
 }

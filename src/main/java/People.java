@@ -22,14 +22,14 @@ public abstract class People <E extends Person> implements Iterable {
         return null;
     }
 
-    public boolean contains(Person person){
+    public boolean contains(E person){
         if(personList.contains(person)){
             return true;
         }
         else return false;
     }
 
-    public void remove(Person person){
+    public void remove(E person){
         personList.remove(person);
     }
 
@@ -41,7 +41,7 @@ public abstract class People <E extends Person> implements Iterable {
         }
     }
 
-    public void removeAll(Person person){
+    public void removeAll(){
         personList.clear();
     }
 
@@ -52,7 +52,7 @@ public abstract class People <E extends Person> implements Iterable {
     public abstract E[] toArray();
 
 
-    public Iterator iterator() {
+    public Iterator<E> iterator() {
         return personList.iterator();
     }
 }

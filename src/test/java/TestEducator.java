@@ -13,17 +13,17 @@ public class TestEducator {
         }
         Assert.assertEquals(true, actual);
     }
-    @Test
+   /* @Test
     public void testInheritance(){
-        /*Educator test = Educator.MIKAILA;
+        *//*Educator test = Educator.MIKAILA;
 
         boolean actual = false;
 
         if(test instanceof Person){
             actual = true;
         }
-        Assert.assertEquals(false, actual);*/
-    }
+        Assert.assertEquals(false, actual);*//*
+    }*/
     @Test
     public void testTeach(){
         Educator test = Educator.MIKAILA;

@@ -25,6 +25,6 @@ public class TestPeople {
         Person test1 = new Person(5L, "Dean");
         test.add(test1);
 
-        Assert.assertEquals(test1, test.findByID(5L));
+        Assert.assertEquals(test1.toString(), test.findByID(5L).toString());
     }
 }

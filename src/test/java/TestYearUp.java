@@ -6,7 +6,7 @@ import org.junit.Test;
 public class TestYearUp {
     @Test
     public void testHostLecture(){
-        YearUp yearup = new YearUp();
+        YearUp yearup = YearUp.getINSTANCE();
 
         yearup.hostLecture(1L,9);
 
@@ -18,4 +18,5 @@ public class TestYearUp {
 
         Assert.assertEquals(expected, actual);
     }
+
 }
