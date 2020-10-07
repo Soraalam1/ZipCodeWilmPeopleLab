@@ -4,7 +4,7 @@ import org.junit.Test;
 public class TestPeople {
     @Test
     public void testAdd(){
-        People test = new People();
+        People test = Students.getInstance();
         Person test1 = new Person(5L, "Dean");
         test.add(test1);
 
@@ -12,7 +12,7 @@ public class TestPeople {
     }
     @Test
     public void testRemove(){
-        People test = new People();
+        People test = Students.getInstance();
         Person test1 = new Person(5L, "Dean");
         test.add(test1);
         test.remove(test1);
@@ -21,7 +21,7 @@ public class TestPeople {
     }
     @Test
     public void testFindByID(){
-        People test = new People();
+        People test = Students.getInstance();
         Person test1 = new Person(5L, "Dean");
         test.add(test1);
 
